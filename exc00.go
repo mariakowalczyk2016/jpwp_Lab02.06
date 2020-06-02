@@ -15,6 +15,7 @@ type Handler struct {
 	receivedMessageChan chan Message     // channel with all incoming payloads
 }
 
+
 func NewHandler() *Handler {
 	return &Handler{
 		ChatList:            make(map[string]*Chat),
